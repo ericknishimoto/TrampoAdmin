@@ -48,6 +48,7 @@ if (
     <!-- Custom styles for this template -->
 
     <link href="css/agency-<?= $infos['tema'] ?>.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
 
   </head>
 
@@ -87,8 +88,8 @@ if (
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in"><?= ($infos['titulo_banner']) ?></div>
           <div class="intro-heading text-uppercase"><?= ($infos['subtitulo_banner']) ?></div>
+          <div class="intro-lead-in"><?= ($infos['titulo_banner']) ?></div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">continuar</a>
         </div>
       </div>
@@ -256,7 +257,7 @@ if (
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <span class="copyright">Copyright &copy; Erick Nishimoto and <a href="https://github.com/BlackrockDigital/startbootstrap-agency/blob/gh-pages/LICENSE">Blackrock Digital LLC.</a></span>
+            <span class="copyright">Copyright &copy; Erick Nishimoto | Layout by<a href="https://github.com/BlackrockDigital/startbootstrap-agency/blob/gh-pages/LICENSE" target="_blank"> Blackrock Digital LLC.</a></span>
           </div>
           </div>
         </div>
