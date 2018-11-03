@@ -34,6 +34,7 @@ if (
     <meta name="author" content="">
 
     <title><?= ($infos['titulo']) ?></title>
+    <link rel="shortcut icon" type="image/png" href="dist/img/favicon.ico"/>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,6 +50,15 @@ if (
 
     <link href="css/agency-<?= $infos['tema'] ?>.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+
+    <!-- typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script>
+      
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings'
+      });
+    </script>
 
   </head>
 
@@ -88,8 +98,8 @@ if (
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-heading text-uppercase"><?= ($infos['subtitulo_banner']) ?></div>
-          <div class="intro-lead-in"><?= ($infos['titulo_banner']) ?></div>
+          <div class="intro-heading text-uppercase"></div>
+          <div class="intro-lead-in"><?= ($infos['subtitulo_banner']) ?></div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">continuar</a>
         </div>
       </div>
@@ -168,7 +178,7 @@ if (
             </a>
             <div class="portfolio-caption">
               <h4><?= ($infos['trabalho2_titulo']) ?></h4>
-              <p class="text-muted"><?= ($infos['trabalho2_titulo']) ?></p>
+              <p class="text-muted"><?= ($infos['trabalho2_subtitulo']) ?></p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
@@ -213,7 +223,7 @@ if (
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Contato</h2>
-            <h3 class="section-subheading text-muted"><?= ($infos['subtitulo_contato']) ?></h3>
+            <h3 class="section-subheading" style="color: white;"><?= ($infos['subtitulo_contato']) ?></h3>
           </div>
         </div>
         <div class="row">

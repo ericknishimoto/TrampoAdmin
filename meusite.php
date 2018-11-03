@@ -69,7 +69,7 @@ $infos = listaMeusite($conexao);
             <div class="box-body mb-1">
               <div class="row">
 
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <div class="form-group">
                       <p>Cor do Tema:</p>
                       <select type="text" required name="tema" class="form-control">
@@ -100,6 +100,13 @@ $infos = listaMeusite($conexao);
                     </div>
                 </div>
 
+                <div class="col-md-3">
+                    <div class="form-group">
+                      <p>Texto logo:</p>
+                      <input value="<?= ($infos['brand']) ?>" type="text" name="brand" class="form-control">
+                    </div>
+                </div>
+
                 <div class="col-md-6">
                     <div class="form-group">
                       <p>Título no navegador:</p>
@@ -110,26 +117,20 @@ $infos = listaMeusite($conexao);
                 <div class="col-md-4">
                     <div class="form-group">
                       <p>Imagem cabeçalho:</p>
+                      <img src="upload/<?= ($infos['cabecalho_imagem']) ?>" class="thumbnail img-rounded img-md"/>
                       <input value="<?= ($infos['cabecalho_imagem']) ?>" type="file" name="cabecalho_imagem" class="form-control-file">
                       <input value="<?= ($infos['cabecalho_imagem']) ?>" type="hidden" name="cabecalho_imagem_anterior">
                     </div>
                 </div>
 
-                <div class="col-md-5">
-                    <div class="form-group">
-                      <p>Texto logo:</p>
-                      <input value="<?= ($infos['brand']) ?>" type="text" name="brand" class="form-control">
-                    </div>
-                </div>
-
-                <div class="col-md-4">
+                <div class="col-md-8">
                     <div class="form-group">
                       <p>Título banner:</p>
                       <input value="<?= ($infos['titulo_banner']) ?>" type="text" name="titulo_banner" class="form-control">
                     </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-8">
                     <div class="form-group">
                       <p>Subtítulo banner:</p>
                       <input value="<?= ($infos['subtitulo_banner']) ?>" type="text" name="subtitulo_banner" class="form-control">
@@ -271,6 +272,7 @@ $infos = listaMeusite($conexao);
                   <div class="col-md-4">
                     <div class="form-group">
                       <p>Imagem:</p>
+                      <img src="upload/<?= ($infos['trabalho1_imagem']) ?>" class="thumbnail img-rounded img-xs"/>
                       <input value="<?= ($infos['trabalho1_imagem']) ?>" type="file" name="trabalho1_imagem" class="form-control-file">
                       <input value="<?= ($infos['trabalho1_imagem']) ?>" type="hidden" name="trabalho1_imagem_anterior">
                     </div>
@@ -287,10 +289,10 @@ $infos = listaMeusite($conexao);
                         <input value="<?= ($infos['trabalho1_subtitulo']) ?>" type="text" name="trabalho1_subtitulo" class="form-control">
                       </div>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-8">
                       <div class="form-group">
                         <p>Texto:</p>
-                        <textarea type="text" name="trabalho1_texto" class="form-control"><?= ($infos['trabalho1_texto']) ?></textarea>
+                        <textarea rows="5" type="text" name="trabalho1_texto" class="form-control"><?= ($infos['trabalho1_texto']) ?></textarea>
                       </div>
                   </div>
                 </div>
@@ -303,6 +305,7 @@ $infos = listaMeusite($conexao);
                   <div class="col-md-4">
                     <div class="form-group">
                       <p>Imagem:</p>
+                      <img src="upload/<?= ($infos['trabalho2_imagem']) ?>" class="thumbnail img-rounded img-xs"/>
                       <input value="<?= ($infos['trabalho2_imagem']) ?>" type="file" name="trabalho2_imagem" class="form-control-file">
                       <input value="<?= ($infos['trabalho2_imagem']) ?>" type="hidden" name="trabalho2_imagem_anterior">
                     </div>
@@ -319,10 +322,10 @@ $infos = listaMeusite($conexao);
                         <input value="<?= ($infos['trabalho2_subtitulo']) ?>" type="text" name="trabalho2_subtitulo" class="form-control">
                       </div>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-8">
                       <div class="form-group">
                         <p>Texto:</p>
-                        <textarea type="text" name="trabalho2_texto" class="form-control"><?= ($infos['trabalho2_texto']) ?></textarea>
+                        <textarea rows="5" type="text" name="trabalho2_texto" class="form-control"><?= ($infos['trabalho2_texto']) ?></textarea>
                       </div>
                   </div>
                 </div>
@@ -335,6 +338,7 @@ $infos = listaMeusite($conexao);
                   <div class="col-md-4">
                     <div class="form-group">
                       <p>Imagem:</p>
+                      <img src="upload/<?= ($infos['trabalho3_imagem']) ?>" class="thumbnail img-rounded img-xs"/>
                       <input value="<?= ($infos['trabalho3_imagem']) ?>" type="file" name="trabalho3_imagem" class="form-control-file">
                       <input value="<?= ($infos['trabalho3_imagem']) ?>" type="hidden" name="trabalho3_imagem_anterior">
                     </div>
@@ -351,10 +355,10 @@ $infos = listaMeusite($conexao);
                         <input value="<?= ($infos['trabalho3_subtitulo']) ?>" type="text" name="trabalho3_subtitulo" class="form-control">
                       </div>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-8">
                       <div class="form-group">
                         <p>Texto:</p>
-                        <textarea type="text" name="trabalho3_texto" class="form-control"><?= ($infos['trabalho3_texto']) ?></textarea>
+                        <textarea rows="5" type="text" name="trabalho3_texto" class="form-control"><?= ($infos['trabalho3_texto']) ?></textarea>
                       </div>
                   </div>
                 </div>
@@ -390,7 +394,7 @@ $infos = listaMeusite($conexao);
                 <div class="col-md-12">
                     <div class="form-group">
                       <p>Texto:</p>
-                      <textarea type="text" name="sobre_texto" class="form-control"><?= ($infos['sobre_texto']) ?></textarea>
+                      <textarea rows="5" type="text" name="sobre_texto" class="form-control"><?= ($infos['sobre_texto']) ?></textarea>
                     </div>
                 </div>
 
