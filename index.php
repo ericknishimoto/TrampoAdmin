@@ -51,15 +51,6 @@ if (
     <link href="css/agency-<?= $infos['tema'] ?>.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 
-    <!-- typed.js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-    <script>
-      
-      var typed = new Typed('#typed', {
-        stringsElement: '#typed-strings'
-      });
-    </script>
-
   </head>
 
   <body id="page-top">
@@ -98,7 +89,9 @@ if (
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-heading text-uppercase"></div>
+          <div class="intro-heading text-uppercase">
+           <span id="typed"></span>
+          </div>
           <div class="intro-lead-in"><?= ($infos['subtitulo_banner']) ?></div>
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">continuar</a>
         </div>
@@ -385,6 +378,19 @@ if (
       bg.style.backgroundAttachment = "scroll";
       bg.style.backgroundPosition = "center center";
       bg.style.backgroundSize = "cover";
+    </script>
+
+     <!-- typed.js -->
+    <script src="js/typed.js"></script>
+    <script>
+     $('document').ready( function(){
+      var typed = new Typed("#typed", {
+        backSpeed: 40,
+        typeSpeed: 40,
+        loop: true,
+        strings: ["<?= $infos['titulo_banner01']?> ^1000", "<?= $infos['titulo_banner02']?> ^1000"] // Waits 1000ms
+      });
+     })
     </script>
 
   </body>

@@ -125,10 +125,18 @@ $infos = listaMeusite($conexao);
 
                 <div class="col-md-8">
                     <div class="form-group">
-                      <p>Título banner:</p>
-                      <input value="<?= ($infos['titulo_banner']) ?>" type="text" name="titulo_banner" class="form-control">
+                      <p>Título banner 01:</p>
+                      <input value="<?= ($infos['titulo_banner01']) ?>" type="text" name="titulo_banner01" class="form-control">
                     </div>
                 </div>
+
+                <div class="col-md-8">
+                    <div class="form-group">
+                      <p>Título banner 02:</p>
+                      <input value="<?= ($infos['titulo_banner02']) ?>" type="text" name="titulo_banner02" class="form-control">
+                    </div>
+                </div>
+
 
                 <div class="col-md-8">
                     <div class="form-group">

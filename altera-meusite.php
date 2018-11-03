@@ -27,7 +27,8 @@ require_once 'banco-meusite.php';
       $tema = $_POST["tema"];
       $titulo = $_POST["titulo"];
       $brand = $_POST["brand"];
-      $titulo_banner = $_POST["titulo_banner"];
+      $titulo_banner01 = $_POST["titulo_banner01"];
+      $titulo_banner02 = $_POST["titulo_banner02"];
       $subtitulo_banner = $_POST["subtitulo_banner"];
       $subtitulo_servicos = $_POST["subtitulo_servicos"];
       $servico1_icone = $_POST["servico1_icone"];
@@ -95,7 +96,8 @@ require_once 'banco-meusite.php';
       $titulo,
       $brand,
       $cabecalho_imagem,
-      $titulo_banner,
+      $titulo_banner01,
+      $titulo_banner02,
       $subtitulo_banner,
       $subtitulo_servicos,
       $servico1_icone,
