@@ -144,6 +144,19 @@ $infos = listaMeusite($conexao);
                       <input value="<?= ($infos['subtitulo_banner']) ?>" type="text" name="subtitulo_banner" class="form-control">
                     </div>
                 </div>
+                <div class="col-md-12">
+                  <div class="box box-warning box-solid mt-2">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">Atenção</h3>
+                      <!-- /.box-tools -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                    Talvez seja necessário pressionar "CTRl + F5" para atualizar as alterações.
+                    </div>
+                  <!-- /.box-body -->
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -402,7 +415,10 @@ $infos = listaMeusite($conexao);
                 <div class="col-md-12">
                     <div class="form-group">
                       <p>Texto:</p>
-                      <textarea rows="5" type="text" name="sobre_texto" class="form-control"><?= ($infos['sobre_texto']) ?></textarea>
+                      <textarea type="text" name="sobre_texto" class="form-control"><?= ($infos['sobre_texto']) ?></textarea>
+                      <script>
+                        CKEDITOR.replace( 'sobre_texto' );
+                      </script>
                     </div>
                 </div>
 

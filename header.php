@@ -31,6 +31,8 @@
    <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap datepicker -->
   <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+   <!-- CKEditor 4 -->
+   <script src="//cdn.ckeditor.com/4.10.1/full/ckeditor.js"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="dist/css/style.css">
   <link rel="stylesheet" href="dist/css/espacamento.css">
